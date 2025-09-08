@@ -1,0 +1,4 @@
+openbb
+pandas
+Flask
+gunicorn
