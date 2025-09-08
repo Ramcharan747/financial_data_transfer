@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: openbb-data-api # Use the same name as your Render service
+    env: python
+    pythonVersion: "3.11"
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn -c gunicorn_config.py main:app"render.yaml
